@@ -15,11 +15,11 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: rgb(158, 158, 158); 
+	background: gray; 
 	border-radius: 8px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: rgb(48, 48, 48); 
+	background: rgb(62, 62, 62); 
 }
