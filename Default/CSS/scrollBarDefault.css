@@ -4,7 +4,7 @@
 	
 }
 ::-webkit-scrollbar:hover{
-	width: 1.05em;
+	transform: scale(1.35);
 }
 
 /* Track */
@@ -16,7 +16,7 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
 	background: rgb(158, 158, 158); 
-	border-radius: 10px;
+	border-radius: 8px;
 }
 
 /* Handle on hover */
