@@ -1,7 +1,7 @@
 :root {
   box-sizing: border-box;
 
-  --primary: #e70146;
+  --primary: #252425;
   --hover-color: #fdd052;
   --dark: #1c2022;
   --light: #fff;
@@ -15,6 +15,8 @@
   margin: 0;
   padding: 0;
 }
+
+/* ----- TAGs ----- */
 body {
   font-family: "josefin sans", "helvetica", sans-serif;
   font-size: 1rem;
@@ -26,6 +28,8 @@ header {
   position: sticky;
   top: 0;
 }
+
+/* ----- CSS NavBar ----- */
 .branding-logo {
   color: var(--light);
   font-size: calc(0.8rem + 1vw);
@@ -51,7 +55,7 @@ header {
   font-size: 1rem;
 }
 
-/* Styling submenu */
+/* ----- Styling submenu ----- */
 .has-dropdown {
   position: relative;
 }
@@ -63,7 +67,7 @@ header {
   padding: 1.5em 0;
   min-width: 16em;
 
-  /* hide submenus */
+  /* Hide Submenus */
   opacity: 0;
   transform: scaleY(0);
   transform-origin: top center;
@@ -89,7 +93,7 @@ header {
   background-color: hsla(0, 0%, 0%, 0.95);
 }
 
-/* Arrows */
+/* ----- Arrows ----- */
 
 .arrow {
   width: 0.5em;
@@ -103,6 +107,13 @@ header {
   transition: transform 100ms ease-in-out;
 }
 
+/* ANIMATE Arrows */
+.menu > li:hover > a > .arrow,
+.submenu > li:hover > a > .arrow {
+  transform: rotate(225deg);
+}
+
+
 /* Reveal  */
 .menu > li:hover > a + .submenu,
 .submenu > li:hover > a + .submenu {
@@ -110,11 +121,7 @@ header {
   transform: scaleY(1);
 }
 
-/* ANIMATE aRROWS */
-.menu > li:hover > a > .arrow,
-.submenu > li:hover > a > .arrow {
-  transform: rotate(225deg);
-}
+/* ----- NavResponsive ----- */
 
 @media only screen and (max-width: 78.75em) {
   .submenu .submenu .submenu {

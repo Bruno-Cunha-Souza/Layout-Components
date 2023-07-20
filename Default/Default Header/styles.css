@@ -119,3 +119,37 @@ nav{
   .search__text{
     font-size: 19px;
   }
+
+  /* ----- CSS NavBar DropDown ----- */
+  .dropdown > li > a {
+    padding: 0.8em 1.5em;
+  }
+  .dropdown .dropdown {
+    left: -100%;
+    top: 0;
+  }
+  .dropdown .dropdown .dropdown {
+    left: -100%;
+    top: 0;
+  }
+/* Dropdown menu__custom items (links) */
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #16181b;
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+
