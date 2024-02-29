@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #18191a;
+  }
+  .navbar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 120px;
+    width: 100%;
+    background: #242526;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .navbar ul{
+    position: relative;
+    display: flex;
+  }
+  .navbar ul li{
+    margin:0 40px;
+    position: relative;
+    list-style-type: none;
+  }
+  .navbar ul li a{
+    position: relative;
+    height: 120px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .navbar ul li a i{
+    position: absolute;
+    font-size: 58px;
+    color: #fff;
+  }
+  ul li a i.activeIcon{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+    transition-delay: 0.1s;
+  }
+  .navbar ul li.active a i{
+    opacity: 1;
+    pointer-events: auto;
+  }
